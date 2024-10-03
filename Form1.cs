@@ -16,5 +16,10 @@ namespace Tic_Tac_Toe_New_Rapid_Class_SODV2202___Group6
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
