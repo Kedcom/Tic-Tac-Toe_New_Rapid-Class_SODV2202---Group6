@@ -43,9 +43,40 @@ namespace Tic_Tac_Toe_New_Rapid_Class_SODV2202___Group6
 
         private void CheckWinnerBox()
         {
+            // Check rows //button1.Text != "" - check
+            if ((button2.Text == button3.Text && button3.Text == button4.Text && button2.Text != "") ||
+                (button5.Text == button6.Text && button6.Text == button7.Text && button5.Text != "") ||
+                (button8.Text == button9.Text && button9.Text == button10.Text && button8.Text != ""))
+            {
+                DisplayWinner();
+            }
 
+            // Check columns
+            else if ((button2.Text == button5.Text && button5.Text == button8.Text && button2.Text != "") ||
+                     (button3.Text == button6.Text && button6.Text == button9.Text && button3.Text != "") ||
+                     (button4.Text == button7.Text && button7.Text == button10.Text && button4.Text != ""))
+            {
+                DisplayWinner();
+            }
+
+            //check diagonals
+            else if ((button2.Text == button6.Text && button6.Text == button10.Text && button2.Text != "") ||
+           (button4.Text == button6.Text && button6.Text == button8.Text && button4.Text != ""))
+            {
+                DisplayWinner();
+            }
+
+            // Check for draw
+            else if (movesCount == 9)
+            {
+                MessageBox.Show("It's a draw!");
+                //ResetGame();
+            }
         }
 
-
+        private void DisplayWinner()
+        {
+           
+        }
     }
 }
