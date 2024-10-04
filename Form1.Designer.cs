@@ -38,6 +38,7 @@
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.Display = new System.Windows.Forms.Label();
+            this.ResetButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button2
@@ -130,9 +131,20 @@
             this.Display.TabIndex = 8;
             this.Display.Text = "Place Holder Text";
             // 
+            // ResetButton
+            // 
+            this.ResetButton.Location = new System.Drawing.Point(359, 46);
+            this.ResetButton.Name = "ResetButton";
+            this.ResetButton.Size = new System.Drawing.Size(79, 25);
+            this.ResetButton.TabIndex = 9;
+            this.ResetButton.Text = "Reset";
+            this.ResetButton.UseVisualStyleBackColor = true;
+            this.ResetButton.Click += new System.EventHandler(this.ResetButton_Click);
+            // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(652, 389);
+            this.Controls.Add(this.ResetButton);
             this.Controls.Add(this.Display);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
@@ -162,6 +174,7 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Label Display;
+        private System.Windows.Forms.Button ResetButton;
     }
 }
 
