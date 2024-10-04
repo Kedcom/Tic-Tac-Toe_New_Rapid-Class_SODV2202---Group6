@@ -17,6 +17,7 @@ namespace Tic_Tac_Toe_New_Rapid_Class_SODV2202___Group6
         public Form1()
         {
             InitializeComponent();
+            Display.Text = "";
         }
 
         private void UsersSelect(object sender, EventArgs e)
@@ -76,7 +77,9 @@ namespace Tic_Tac_Toe_New_Rapid_Class_SODV2202___Group6
 
         private void DisplayWinner()
         {
-           
+            string winner = TrackPlayersTurn ? "O" : "X"; // Since the turn changes after each move, the current player is the loser, and the last player is the winner.
+            Display.Text = $"Player {winner} wins!";
+            //ResetGame();
         }
     }
 }
